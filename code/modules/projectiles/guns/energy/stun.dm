@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/taser
-	name = "electrolaser"
-	desc = "The NT Mk30 NL is a small, low capacity gun used for non-lethal takedowns. Produced by NT, it's actually a licensed version of a W-T design. It can switch between high and low intensity stun shots."
+	name = "Tazer"
+	desc = "Standard Issue Foundation Tazer"
 	icon = 'icons/obj/guns/taser.dmi'
 	icon_state = "taser"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -79,7 +79,7 @@
 	icon_state = "crossbow"
 	w_class = ITEM_SIZE_NORMAL
 	item_state = "crossbow"
-	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2, TECH_ESOTERIC = 5)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2, TECH_ILLEGAL = 5)
 	matter = list(MATERIAL_STEEL = 2000)
 	slot_flags = SLOT_BELT
 	silenced = 1
