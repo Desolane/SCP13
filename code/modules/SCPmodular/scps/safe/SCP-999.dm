@@ -15,14 +15,6 @@
 	var/attached_mode = HUGGING
 	var/list/last_healing = list()
 
-/mob/living/simple_animal/scp_999/update_icon()
-	if(stat != DEAD && resting)
-		icon_state = "SCP-999_rest"
-	else if(stat == DEAD)
-		icon_state = "SCP-999_dead"
-	else
-		icon_state = "SCP-999"
-
 /mob/living/simple_animal/scp_999/examine(mob/user)
 	. = ..(user)
 	to_chat(user, "<b><span class = 'success'>SCP-999</span></b> - [desc]")

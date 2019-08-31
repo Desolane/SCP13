@@ -5,7 +5,7 @@
 	department_flag = MSC
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Yourself"
+	supervisors = "Nobody"
 	selection_color = "#254c25"
 	minimal_player_age = 0
 	account_allowed = 0
@@ -16,7 +16,7 @@
 	no_skill_buffs = TRUE
 
 /datum/job/scp173/handle_variant_join(var/mob/living/carbon/human/H, var/alt_title)
-	return H && H.scpize()
+	return H && H.transform173()
 
 
 /datum/job/scp999
@@ -24,7 +24,7 @@
 	department_flag = MSC
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Yourself"
+	supervisors = "Nobody"
 	selection_color = "#254c25"
 	minimal_player_age = 0
 	account_allowed = 0
@@ -35,4 +35,4 @@
 	no_skill_buffs = TRUE
 
 /datum/job/scp999/handle_variant_join(var/mob/living/carbon/human/H, var/alt_title)
-	return H && H.spcize()
+	return H && H.transform999()

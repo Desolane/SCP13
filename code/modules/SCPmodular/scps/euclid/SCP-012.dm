@@ -53,7 +53,7 @@
 			affecting.drip(50)
 		// once every 15 seconds
 		else if (!(ticks % 15) && affecting.getBruteLoss())
-			affecting.visible_message("<span class = \"warning\">[affecting] smears [T.his] blood on \"[name]\", writing musical notes...")
+			affecting.visible_message("<span class = \"warning\">[affecting] smears [T.his] blood on \"[name]\", writing musical notes...</span>")
 		// otherwise
 		else if (prob(5))
 			if (prob(50))
