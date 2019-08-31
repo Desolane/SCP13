@@ -23,7 +23,8 @@ GLOBAL_LIST_EMPTY(scp294_reagents)
 			GLOB.scp294_reagents[D.name] = D
 
 /obj/machinery/scp294/examine(mob/user)
-	user << "<b><span class = 'euclid'><big>SCP-294</big></span></b> - [desc]"
+	. = ..(user)
+	to_chat(user, "<b><span class = 'euclid'><big>SCP-294</big></span></b> - [desc]")
 
 /obj/machinery/scp294/attack_hand(mob/user)
 

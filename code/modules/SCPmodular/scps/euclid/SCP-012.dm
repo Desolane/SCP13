@@ -9,8 +9,8 @@
 	var/ticks = 0
 
 /obj/item/paper/scp012/examine(mob/user)
-	user << "<b><span class = 'warning'><big>You feel an overwhelming urge to finish the sheet...</big></span></b> - [desc]"
-
+	. = ..(user)
+	to_chat(user, "<b><span class = 'warning'><big>You feel an overwhelming urge to finish the sheet...</big></span></b> - [desc]")
 
 /obj/item/paper/scp012/Initialize()
 	. = ..()

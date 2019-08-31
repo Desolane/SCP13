@@ -24,7 +24,8 @@
 		icon_state = "SCP-999"
 
 /mob/living/simple_animal/scp_999/examine(mob/user)
-	user << "<b><span class = 'success'>SCP-999</span></b> - [desc]"
+	. = ..(user)
+	to_chat(user, "<b><span class = 'success'>SCP-999</span></b> - [desc]")
 
 mob/living/simple_animal/scp_999/UnarmedAttack(atom/a)
 	if(ishuman(a))
