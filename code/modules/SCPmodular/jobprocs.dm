@@ -1,6 +1,6 @@
 
 
-/mob/living/carbon/human/proc/scpize()
+/mob/living/carbon/human/proc/transform173() // we need to make this more convenient at some point
 	if (HAS_TRANSFORMATION_MOVEMENT_HANDLER(src))
 		return
 	for(var/obj/item/W in src)
@@ -20,7 +20,7 @@
 	qdel(src)
 	return
 
-/mob/living/carbon/human/proc/spcize()
+/mob/living/carbon/human/proc/transform999() // same for this one
 	if (HAS_TRANSFORMATION_MOVEMENT_HANDLER(src))
 		return
 	for(var/obj/item/W in src)
